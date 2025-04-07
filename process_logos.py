@@ -1,7 +1,7 @@
 from PIL import Image, ImageOps
 import os
 
-# SETTINGS
+# settings
 input_folder = "input_logos"
 output_folder = "output_logos"
 target_size = 800
@@ -12,10 +12,11 @@ padding_percent = 0.1
 # offset = vertical shift in pixels (positive = move down, negative = move up)
 logo_settings = {
     "usm":      {"boost": 1.0, "offset": 0},
-    "teknion":  {"boost": 1.5, "offset": -20},
-    "falk":     {"boost": 1.5, "offset": 20},
+    "teknion":  {"boost": 1.9, "offset": -20},
+    "falk":     {"boost": 1.5, "offset": 40},
     "global": {"boost": 0.85, "offset": 0},
-    "humanscale": {"boost": 1.0, "offset": 10},
+    "humanscale": {"boost": 1.0, "offset": -30},
+    "kimball": {"boost": 1.1, "offset": 0},
 }
 
 os.makedirs(output_folder, exist_ok=True)
